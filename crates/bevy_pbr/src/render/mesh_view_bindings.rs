@@ -206,7 +206,7 @@ fn layout_entries(
                 uniform_buffer::<ViewUniform>(true).visibility(ShaderStages::VERTEX_FRAGMENT),
             ),
             // Lights
-            (1, uniform_buffer::<GpuLights>(true)),
+            (1, uniform_buffer::<GpuLights>(true).visibility(ShaderStages::VERTEX_FRAGMENT)),
             // Point Shadow Texture Cube Array
             (
                 2,
