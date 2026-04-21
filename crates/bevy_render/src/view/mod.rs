@@ -882,7 +882,7 @@ pub fn prepare_view_targets(
         let main_texture_format = if view.hdr {
             ViewTarget::TEXTURE_FORMAT_HDR
         } else {
-            TextureFormat::Rgba8Unorm
+            TextureFormat::bevy_default()
         };
 
         let clear_color = match camera.clear_color {

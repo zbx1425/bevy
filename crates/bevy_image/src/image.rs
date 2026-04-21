@@ -21,7 +21,7 @@ pub trait BevyDefault {
 
 impl BevyDefault for TextureFormat {
     fn bevy_default() -> Self {
-        TextureFormat::Rgba8UnormSrgb
+        TextureFormat::Rgba8Unorm
     }
 }
 
