@@ -832,7 +832,7 @@ pub fn prepare_view_attachments(
                     .cloned()
                     .zip(target.get_texture_format(&windows, &images, &manual_texture_views))
                     .map(|(view, format)| {
-                        OutputColorAttachment::new(view.clone(), format.add_srgb_suffix())
+                        OutputColorAttachment::new(view.clone(), format)
                     })
                 else {
                     continue;

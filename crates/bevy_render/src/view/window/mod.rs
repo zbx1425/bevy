@@ -75,7 +75,7 @@ pub struct ExtractedWindow {
 impl ExtractedWindow {
     fn set_swapchain_texture(&mut self, frame: wgpu::SurfaceTexture) {
         let texture_view_descriptor = TextureViewDescriptor {
-            format: Some(frame.texture.format().add_srgb_suffix()),
+            format: Some(frame.texture.format()),
             ..default()
         };
         self.swap_chain_texture_view = Some(TextureView::from(
